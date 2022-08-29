@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: $VeryDarkBlueMainBG;
+}
+
+a {
+    text-decoration: none;
+    color: $White;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+        color: $Cyan;
+    
+    }
+    
+}
+

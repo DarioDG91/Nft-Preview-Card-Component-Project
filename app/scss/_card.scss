@@ -1,0 +1,130 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    background-color: $VeryDarkBlueCardBG;
+    width: 87%;
+    max-width: 22rem;
+    border-radius: 1rem;
+
+    .main-img {
+      position: relative;
+      background-image: url("/images/image-equilibrium.jpg");
+      height: 17.4rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 1.5rem 1.5rem 1rem 1.5rem;
+      border-radius: 0.5rem;
+
+      .second-img {
+        position: absolute;
+        background-color: hsl(178, 100%, 50%, 30%);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 300ms ease-in-out;
+
+
+        img {
+            position: absolute;
+            height: 2rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+
+
+        }
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+
+
+        }
+        
+      }
+    }
+
+    .text {
+      margin: 0rem 1.5rem 1.5rem 1.5rem;
+
+      h1 {
+        a {
+          font-weight: 600;
+          font-size: 1.38rem;
+        }
+      }
+
+      .description {
+        margin-top: 0.7rem;
+        color: $SoftBlue;
+        font-weight: 300;
+        line-height: 1.6rem;
+      }
+
+      .sale {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .price {
+          color: $Cyan;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.44rem;
+        }
+        .countdown {
+          color: $SoftBlue;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.44rem;
+          font-weight: 400;
+        }
+      }
+
+      hr {
+        border: 0.001px solid $VeryDarkBlueLine;
+        margin: 1rem 0 1rem 0;
+      }
+
+      .creator {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        .avatar {
+          background-image: url("/images/image-avatar.png");
+          height: 2rem;
+          width: 2rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 50px;
+          border: 1px solid $White;
+        }
+        div {
+          color: $SoftBlue;
+          font-weight: 300;
+          font-size: 0.95rem;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
